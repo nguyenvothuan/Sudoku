@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Sudoku Game</title>
+        
+    </head>
+    <header>
+        <h1>Sudoku</h1>
+        <div id="setup-game">
+            <div id="diff">
+                <h3>
+                    Choose Difficulty: 
+                </h3>
+                <label>
+                    <input id="diff-1" type="radio" name="diff" value="easy" >
+                    Easy
+                </label>
+                <label>
+                    <input id="diff-2" type="radio" name="diff" value="medium" checked>
+                    Medium
+                </label>
+                <label>
+                    <input id="diff-3" type="radio" name="diff" value="hard">
+                    Hard
+                </label>
+            </div>
+            <div id="time">
+                <h3>Choose Time: </h3>
+                <label>
+                    <input id="time-1" type="radio" name="time" value="3" checked>
+                    3 Min
+                </label>
+                <label>
+                    <input id="time-2" type="radio" name="time" value="5" >
+                    5 Min
+                </label>
+                <label>
+                    <input id="time-3" type="radio" name="time" value="10">
+                    10 Min
+                </label>
+            </div>
+            <div theme>
+                <h3>Choose Theme: </h3>
+                <label>
+                    <input id="theme-1" type="radio" name="theme" value="light" >
+                    Light
+                </label>
+                <label>
+                    <input id="theme-2" type="radio" name="theme" value="dark" checked>
+                    Dark
+                </label>
+            </div>
+        </div>
+        <button id="start-btn">
+            Create New Game
+        </button>
+    </header>
+    <body>       
+        <div id="stats">
+            <p id="timer">Timer</p>
+            <p id="live">Lives</p>
+        </div>
+        <div id="game">
+            <div id="board">
+
+            </div>
+            <div id="number-container" class="hidden">
+                <p id="one">1</p>
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>Made by Thuan and Toan</p>
+    </footer>
+</html>
